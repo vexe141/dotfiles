@@ -7,3 +7,13 @@ set-option global indentwidth 4
 hook global InsertChar \t %{
     exec -draft h@
 }
+
+# plugin manager and plugins
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+plug "andreyorst/plug.kak" noload
+plug "alexherbo2/auto-pairs.kak"
+
+# auto pairs config
+set-option global auto_pairs ( ) { } [ ] '"' '"' "'" "'" ` ` │ “ ” ‘ ’ « » ‹ ›
+evaluate-commands enable-auto-pairs
