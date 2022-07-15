@@ -1,0 +1,7 @@
+[user]
+	name = vexe
+	email = vexebusiness6472814@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+	logd = log --oneline --graph --decorate
